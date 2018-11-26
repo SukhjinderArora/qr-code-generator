@@ -2,4 +2,4 @@
 
 ## How to Use?
 
-### Use `npm install` to install all the dependencies
+Use `npm install` to install all the dependencies
