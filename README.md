@@ -1,0 +1,1 @@
+# Simple boilerplate for small JavaScript apps
