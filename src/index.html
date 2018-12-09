@@ -4,9 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>JavaScript Boilerplate</title>
+  <title>QR Code Generator</title>
 </head>
 <body>
-  <h1>Hello World</h1>
+  <main>
+    <header class="heading">
+      <h1 class="heading__primary">QR Code Generator</h1>
+    </header>
+    <section class="section-qr-code">
+      <form class="form">
+        <input type="text" class="form__input" placeholder="Enter URL or Text">
+        <button type="submit" class="form__submit-btn">Generate QR Code</button>
+      </form>
+      <div class="qr-code">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?data=HelloWorld&amp;size=200x200" alt="qr code" class="qr-code-img">
+      </div>
+    </section>
+  </main>
 </body>
 </html>

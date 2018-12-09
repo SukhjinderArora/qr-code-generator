@@ -1,0 +1,34 @@
+.form {
+  margin-top: 5rem;
+
+  &__input {
+    width: 30rem;
+    padding: 1rem .6rem;
+    font-size: 1.5rem;
+    font-family: inherit;
+    outline: 0;
+    border: 1px solid rgba($color-primary, .3);
+    transition: all .2s;
+
+    &:focus {
+      border: 1px solid rgba($color-primary, .761);
+    }
+  }
+
+  &__submit-btn {
+    padding: 1.2rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    background: rgba($color-primary, .761);
+    color: rgba($color-primary-text, .7);
+    border: 1px solid transparent;
+    border-radius: 3px;
+    transition: all .3s;
+
+    &:hover {
+      background: #fff;
+      color: rgba($color-primary, .761);
+      border-color: rgba($color-primary, .78);
+    }
+  }
+}

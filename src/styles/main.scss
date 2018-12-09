@@ -1,5 +1,7 @@
+@import 'base';
+@import 'mixins';
+@import 'variables';
+@import 'typography';
 @import 'header';
-
-body {
-  text-align: center;
-}
+@import 'form';
+@import 'qr-code';
