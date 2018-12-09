@@ -1,8 +1,8 @@
 {
-  "name": "javascript-boilerplate",
-  "homepage": "Website URL",
+  "name": "qr-code-generator",
+  "homepage": "https://sukhjinderarora.github.io/qr-code-generator",
   "version": "1.0.0",
-  "description": "A simple Boilerplate for small JavaScript applications",
+  "description": "JavaScript application for generating QR code",
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development",
