@@ -16,13 +16,13 @@
   }
 
   &__submit-btn {
-    padding: 1.2rem;
-    font-size: 1.4rem;
+    padding: 1rem 1.2rem;
+    font: inherit;
     cursor: pointer;
     background: rgba($color-primary, .761);
-    color: rgba($color-primary-text, .7);
+    color: rgba($color-primary-text, 1);
     border: 1px solid transparent;
-    border-radius: 3px;
+    border-radius: 2px;
     transition: all .3s;
 
     &:hover {

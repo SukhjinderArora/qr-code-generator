@@ -1,0 +1,19 @@
+.buttons {
+  margin-top: 2rem;
+}
+
+.btn {
+  &:link,
+  &:visited,
+  &:active {
+  display: inline-block;
+  background: rgba($color-primary, .761);
+  color: #fff;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  }
+
+  &:hover {
+    background: rgba($color-primary, .6);
+  }
+}
