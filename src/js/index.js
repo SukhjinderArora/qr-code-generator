@@ -19,11 +19,21 @@ import * as qrGeneratorView from './qrGeneratorView';
  */
 
 // Controller
+let encodedURL = '';
+
+const createEncodedURL = () => encodeURIComponent(qrGeneratorView.getInput().trim());
+
 elements.form.addEventListener('submit', (event) => {
   event.preventDefault();
-  const url = qrGeneratorView.getInput().trim();
-  if (url === '') return;
-  const encodedURL = encodeURIComponent(url);
+  encodedURL = createEncodedURL();
+  if (encodedURL === '') return;
   qrGeneratorView.renderQRCode(encodedURL);
   qrGeneratorView.clearInput();
+});
+
+elements.qrCodeBox.addEventListener('click', (event) => {
+  const printBtn = document.querySelector('.btn--print');
+  if (event.target === printBtn) {
+    qrGeneratorView.printImg(encodedURL);
+  }
 });
